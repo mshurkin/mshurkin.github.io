@@ -1,0 +1,15 @@
+﻿{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "X86NQK83T7.ru.handh.petrovich",
+        "paths": [ "/", "/order/*/*/", "NOT /order/*/*/*", "/catalog/*/", "/catalog/*/*/", "NOT /catalog/*/*/*", "/action-type/*/", "NOT /action-type/*/*/*", "/actions/" ]
+      },
+      {
+        "appID": "JL3GM5N4EY.ru.petrovich.ios",
+        "paths": [ "/order/*", "catalog/*/*/" ]
+      }
+    ]
+  }
+}
