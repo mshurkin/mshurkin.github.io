@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "X86NQK83T7.ru.handh.petrovich",
-        "paths": [ "/", "NOT /order/*/*/*/", "/order/*/*/", "NOT /catalog/*/*/*/", "/catalog/*/*", "NOT /action-type/*/*/*/", "/action-type/*/", "/actions/" ]
+        "paths": [ "/", "NOT /order/*/*/*/", "/order/*/*/", "NOT /catalog/*/*/*/", "/catalog/*/*", "NOT /action-type/*/*/*/", "/action-type/*/*", "/actions/" ]
       },
       {
         "appID": "JL3GM5N4EY.ru.petrovich.ios",
