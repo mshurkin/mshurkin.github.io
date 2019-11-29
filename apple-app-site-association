@@ -9,7 +9,7 @@
           "NOT /order/*/*/*/", "/order/*/*/", 
           "NOT /catalog/*/*/*/", "/catalog/*/*/", 
           "NOT /action-type/*/*/*/", "/action-type/*/*/", 
-          "/actions/"
+          "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
         ]
       },
