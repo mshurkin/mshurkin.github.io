@@ -4,7 +4,14 @@
     "details": [
       {
         "appID": "X86NQK83T7.ru.handh.petrovich",
-        "paths": [ "/", "NOT /order/*/*/*/", "/order/*/*/", "NOT /catalog/*/*/*/", "/catalog/*/*/", "NOT /action-type/*/*/*/", "/action-type/*/*/", "/actions/", "NOT /profile/estimate/*/*/", "/profile/estimate/*/" ]
+        "paths": [
+          "/",
+          "NOT /order/*/*/*/", "/order/*/*/",
+          "NOT /catalog/*/*/*/", "/catalog/*/*",
+          "NOT /action-type/*/*/*/", "/action-type/*/*",
+          "/actions/",
+          "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
+        ]
       },
       {
         "appID": "JL3GM5N4EY.ru.petrovich.ios",
