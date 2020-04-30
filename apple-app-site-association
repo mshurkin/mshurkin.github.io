@@ -11,6 +11,12 @@
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
+        ],
+        "components": [
+          "/": "*",
+          "?": { "current_city" : "*", "user_change_city" : "1" },
+          "exclude": true,
+          "comment": "Исключаем смену региона"
         ]
       },
       {
