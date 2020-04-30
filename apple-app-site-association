@@ -6,19 +6,19 @@
         "appID": "X86NQK83T7.ru.handh.petrovich",
         "components": [
           {
-            "/": "/"
-          },
-          {
             "/": "*",
             "?": { "current_city" : "*", "user_change_city" : "1" },
             "exclude": true,
             "comment": "Исключаем смену региона"
           },
           {
-            "#": "/catalog/*/*/"
+            "/": "/"
           },
           {
-            "#": "/actions"
+            "/": "/catalog/*/*"
+          },
+          {
+            "/": "/actions"
           }
         ],
         "paths": [
