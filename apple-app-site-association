@@ -4,21 +4,58 @@
     "details": [
       {
         "appID": "X86NQK83T7.ru.handh.petrovich",
+        "paths": [],
         "components": [
           {
             "/": "*",
             "?": { "current_city" : "*", "user_change_city" : "1" },
             "exclude": true,
             "comment": "Исключаем смену региона"
+          },
+          {
+            "/": "/",
+            "comment": "Главный экран"
+          },
+          {
+            "/": "/catalog/*/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из каталога"
+          },
+          {
+            "/": "/catalog/*/*",
+            "comment": "Категория или товар"
+          },
+          {
+            "/": "/order/*/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из заказов"
+          },
+          {
+            "/": "/order/*/*/",
+            "comment": "Заказ"
+          },
+          {
+            "/": "/action-type/*/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из акций"
+          },
+          {
+            "/": "/action-type/*/*",
+            "comment": "Акция без/с категорией"
+          },
+          {
+            "/": "/actions",
+            "comment": "Список акций"
+          },
+          {
+            "/": "/profile/estimate/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из смет"
+          },
+          {
+            "/": "/profile/estimate/*/",
+            "comment": "Смета"
           }
-        ],
-        "paths": [
-          "/",
-          "NOT /order/*/*/*/", "/order/*/*/",
-          "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /action-type/*/*/*/", "/action-type/*/*",
-          "/actions/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
         ]
       },
       {
