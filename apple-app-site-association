@@ -1,4 +1,4 @@
-﻿{
+{
   "applinks": {
     "apps": [],
     "details": [
@@ -6,7 +6,7 @@
         "appID": "X86NQK83T7.ru.handh.petrovich",
         "components": [
           {
-            "/": "*",
+            "/": "/*",
             "?": { "current_city" : "*", "user_change_city" : "1" },
             "exclude": true,
             "comment": "Исключаем смену региона"
@@ -19,19 +19,32 @@
             "exclude": true
           },
           {
-            "/": "/catalog/*/*"
+            "/": "/catalog/*/*/"
+          },
+          {
+            "/": "/order/*/*/*/",
+            "exclude": true
+          },
+          {
+            "/": "/order/*/*/"
+          },
+          {
+            "/": "/action-type/*/*/*/",
+            "exclude": true
+          },
+          {
+            "/": "/action-type/*/*/"
           },
           {
             "/": "/actions"
+          },
+          {
+            "/": "/rofile/estimate/*/*/",
+            "exclude": true
+          },
+          {
+            "/": "/rofile/estimate/*/"
           }
-        ],
-        "paths": [
-          "/",
-          "NOT /order/*/*/*/", "/order/*/*/",
-          "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /action-type/*/*/*/", "/action-type/*/*",
-          "/actions/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
         ]
       },
       {
