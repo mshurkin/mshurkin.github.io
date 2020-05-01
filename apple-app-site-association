@@ -13,38 +13,48 @@
             "comment": "Исключаем смену региона"
           },
           {
-            "/": "/"
+            "/": "/",
+            "comment": "Главный экран"
           },
           {
             "/": "/catalog/*/*/*/",
-            "exclude": true
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из каталога"
           },
           {
-            "/": "/catalog/*/*/"
+            "/": "/catalog/*/*",
+            "comment": "Категория или товар"
           },
           {
             "/": "/order/*/*/*/",
-            "exclude": true
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из заказов"
           },
           {
-            "/": "/order/*/*/"
+            "/": "/order/*/*/",
+            "comment": "Заказ"
           },
           {
             "/": "/action-type/*/*/*/",
-            "exclude": true
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из акций"
           },
           {
-            "/": "/action-type/*/*/"
+            "/": "/action-type/*/*",
+            "comment": "Акция без/с категорией"
           },
           {
-            "/": "/actions"
+            "/": "/actions",
+            "comment": "Список акций"
           },
           {
             "/": "/profile/estimate/*/*/",
-            "exclude": true
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из смет"
           },
           {
-            "/": "/profile/estimate/*/"
+            "/": "/profile/estimate/*/",
+            "comment": "Смета"
           }
         ]
       },
