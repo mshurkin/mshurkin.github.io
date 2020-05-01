@@ -19,7 +19,7 @@
             "exclude": true
           },
           {
-            "/": "/catalog/*/*/"
+            "/": "/catalog/*/*"
           },
           {
             "/": "/actions"
