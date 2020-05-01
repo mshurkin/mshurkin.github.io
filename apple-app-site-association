@@ -4,9 +4,10 @@
     "details": [
       {
         "appID": "X86NQK83T7.ru.handh.petrovich",
+        "paths": [],
         "components": [
           {
-            "/": "/*",
+            "/": "*",
             "?": { "current_city" : "*", "user_change_city" : "1" },
             "exclude": true,
             "comment": "Исключаем смену региона"
@@ -39,11 +40,11 @@
             "/": "/actions"
           },
           {
-            "/": "/rofile/estimate/*/*/",
+            "/": "/profile/estimate/*/*/",
             "exclude": true
           },
           {
-            "/": "/rofile/estimate/*/"
+            "/": "/profile/estimate/*/"
           }
         ]
       },
