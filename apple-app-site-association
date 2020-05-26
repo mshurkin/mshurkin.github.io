@@ -10,7 +10,8 @@
           "NOT /catalog/*/*/*/", "/catalog/*/*",
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
+          "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
+          "NOT /estimate/*/*/", "/estimate/*/"
         ],
         "components": [
           {
@@ -62,6 +63,15 @@
           {
             "/": "/profile/estimate/*/",
             "comment": "Смета"
+          },
+          {
+            "/": "/estimate/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из смет второго типа"
+          },
+          {
+            "/": "/estimate/*/",
+            "comment": "Смета второго типа"
           }
         ]
       },
@@ -73,7 +83,8 @@
           "NOT /catalog/*/*/*/", "/catalog/*/*",
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/"
+          "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
+          "NOT /estimate/*/*/", "/estimate/*/"
         ],
         "components": [
           {
@@ -125,6 +136,15 @@
           {
             "/": "/profile/estimate/*/",
             "comment": "Смета"
+          },
+          {
+            "/": "/estimate/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из смет второго типа"
+          },
+          {
+            "/": "/estimate/*/",
+            "comment": "Смета второго типа"
           }
         ]
       }
