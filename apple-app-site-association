@@ -6,7 +6,7 @@
         "appID": "X86NQK83T7.ru.handh.petrovich",
         "paths": [
           "/",
-          "NOT /order/*/*/*/", "/order/*/*/",
+          "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
@@ -39,8 +39,8 @@
             "comment": "Исключаем остальные ссылки из заказов"
           },
           {
-            "/": "/order/*/*/",
-            "comment": "Заказ"
+            "/": "/order/*/*",
+            "comment": "Заказ с хэшем или без"
           },
           {
             "/": "/action-type/*/*/*/",
