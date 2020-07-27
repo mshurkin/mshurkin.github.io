@@ -12,7 +12,7 @@
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
-          "/qr/order/*/
+          "/qr/order/*/"
         ],
         "components": [
           {
