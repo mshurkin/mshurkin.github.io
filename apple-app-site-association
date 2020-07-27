@@ -11,7 +11,8 @@
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
-          "NOT /estimate/*/*/", "/estimate/*/"
+          "NOT /estimate/*/*/", "/estimate/*/",
+          "/qr/order/*/
         ],
         "components": [
           {
@@ -40,7 +41,7 @@
           },
           {
             "/": "/order/*/*",
-            "comment": "Заказ с хэшем или без"
+            "comment": "Заказ с хешем или без"
           },
           {
             "/": "/action-type/*/*/*/",
@@ -72,6 +73,10 @@
           {
             "/": "/estimate/*/",
             "comment": "Смета второго типа"
+          },
+          {
+            "/": "/qr/order/*/",
+            "comment": "Заказ из QR-кода"
           }
         ]
       },
