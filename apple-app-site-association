@@ -89,12 +89,13 @@
         "appID": "JL3GM5N4EY.ru.petrovich.ios",
         "paths": [
           "/",
-          "NOT /order/*/*/*/", "/order/*/*/",
+          "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
           "NOT /action-type/*/*/*/", "/action-type/*/*",
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
-          "NOT /estimate/*/*/", "/estimate/*/"
+          "NOT /estimate/*/*/", "/estimate/*/",
+          "NOT /qr/order/*/*/", "/qr/order/*/"
         ],
         "components": [
           {
@@ -122,8 +123,8 @@
             "comment": "Исключаем остальные ссылки из заказов"
           },
           {
-            "/": "/order/*/*/",
-            "comment": "Заказ"
+            "/": "/order/*/*",
+            "comment": "Заказ с хешем или без"
           },
           {
             "/": "/action-type/*/*/*/",
@@ -155,6 +156,15 @@
           {
             "/": "/estimate/*/",
             "comment": "Смета второго типа"
+          },
+          {
+            "/": "/qr/order/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки из смет второго типа"
+          },
+          {
+            "/": "/qr/order/*/",
+            "comment": "Заказ из QR-кода"
           }
         ]
       }
