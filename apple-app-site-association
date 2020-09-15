@@ -12,7 +12,9 @@
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
-          "NOT /qr/order/*/*/", "/qr/order/*/"
+          "NOT /qr/order/*/*/", "/qr/order/*/",
+          "/login/",
+          "/cabinet/profile/"
         ],
         "components": [
           {
@@ -32,7 +34,7 @@
           },
           {
             "/": "/catalog/*/*",
-            "comment": "Категория или товар"
+            "comment": "Категория, товар или избранное"
           },
           {
             "/": "/order/*/*/*/",
@@ -53,7 +55,7 @@
             "comment": "Акция без/с категорией"
           },
           {
-            "/": "/actions",
+            "/": "/actions/",
             "comment": "Список акций"
           },
           {
@@ -82,6 +84,14 @@
           {
             "/": "/qr/order/*/",
             "comment": "Заказ из QR-кода"
+          },
+          {
+            "/": "/login/",
+            "comment": "Авторизация"
+          },
+          {
+            "/": "/cabinet/profile/",
+            "comment": "Личный кабинет"
           }
         ]
       },
@@ -95,7 +105,9 @@
           "/actions/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
-          "NOT /qr/order/*/*/", "/qr/order/*/"
+          "NOT /qr/order/*/*/", "/qr/order/*/",
+          "/login/",
+          "/cabinet/profile/"
         ],
         "components": [
           {
@@ -115,7 +127,7 @@
           },
           {
             "/": "/catalog/*/*",
-            "comment": "Категория или товар"
+            "comment": "Категория, товар или избранное"
           },
           {
             "/": "/order/*/*/*/",
@@ -136,7 +148,7 @@
             "comment": "Акция без/с категорией"
           },
           {
-            "/": "/actions",
+            "/": "/actions/",
             "comment": "Список акций"
           },
           {
@@ -165,6 +177,14 @@
           {
             "/": "/qr/order/*/",
             "comment": "Заказ из QR-кода"
+          },
+          {
+            "/": "/login/",
+            "comment": "Авторизация"
+          },
+          {
+            "/": "/cabinet/profile/",
+            "comment": "Личный кабинет"
           }
         ]
       }
