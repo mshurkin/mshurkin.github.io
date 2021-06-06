@@ -8,8 +8,9 @@
           "/",
           "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /action-type/*/*/*/", "/action-type/*/*",
-          "/actions/",
+          "/promos/*/",
+          "/promos/*/section/*/",
+          "/promos/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
           "NOT /qr/order/*/*/", "/qr/order/*/",
@@ -46,16 +47,15 @@
             "comment": "Заказ с хешем или без"
           },
           {
-            "/": "/action-type/*/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из акций"
+            "/": "/action-type/*/section/*/",
+            "comment": "Акция с категорией"
           },
           {
-            "/": "/action-type/*/*",
-            "comment": "Акция без/с категорией"
+            "/": "/action-type/*/",
+            "comment": "Акция без категории"
           },
           {
-            "/": "/actions/",
+            "/": "/promos/",
             "comment": "Список акций"
           },
           {
