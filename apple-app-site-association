@@ -8,8 +8,8 @@
           "/",
           "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /promos/*/section/*/*/", "/promos/*/section/*",
-          "NOT /promos/*/*/", "/promos/*",
+          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
+          "NOT /promos/*/*/", "/promos/*/",
           "/promos/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
@@ -52,7 +52,7 @@
             "comment": "Исключаем остальные ссылки на акцию с категории"
           },
           {
-            "/": "/promos/*/section/*",
+            "/": "/promos/*/section/*/",
             "comment": "Акция с категорией"
           },
           {
@@ -61,7 +61,7 @@
             "comment": "Исключаем ссылки на акцию без категории"
           },
           {
-            "/": "/promos/*",
+            "/": "/promos/*/",
             "comment": "Акция без категории"
           },
           {
@@ -111,8 +111,8 @@
           "/",
           "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /promos/*/section/*/*/", "/promos/*/section/*",
-          "NOT /promos/*/*/", "/promos/*",
+          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
+          "NOT /promos/*/*/", "/promos/*/",
           "/promos/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
@@ -155,7 +155,7 @@
             "comment": "Исключаем остальные ссылки на акцию с категории"
           },
           {
-            "/": "/promos/*/section/*",
+            "/": "/promos/*/section/*/",
             "comment": "Акция с категорией"
           },
           {
@@ -164,7 +164,7 @@
             "comment": "Исключаем ссылки на акцию без категории"
           },
           {
-            "/": "/promos/*",
+            "/": "/promos/*/",
             "comment": "Акция без категории"
           },
           {
