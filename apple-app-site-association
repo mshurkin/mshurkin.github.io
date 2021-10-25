@@ -8,6 +8,8 @@
           "/",
           "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
+          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
+          "NOT /promos/*/*/", "/promos/*/",
           "/promos/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
@@ -42,6 +44,24 @@
           {
             "/": "/order/*/*",
             "comment": "Заказ с хешем или без"
+          },
+          {
+            "/": "/promos/*/section/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки на акцию с категории"
+          },
+          {
+            "/": "/promos/*/section/*/",
+            "comment": "Акция с категорией"
+          },
+          {
+            "/": "/promos/*/*/",
+            "exclude": true,
+            "comment": "Исключаем ссылки на акцию без категории"
+          },
+          {
+            "/": "/promos/*/",
+            "comment": "Акция без категории"
           },
           {
             "/": "/promos/",
@@ -86,6 +106,8 @@
           "/",
           "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
+          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
+          "NOT /promos/*/*/", "/promos/*/",
           "/promos/",
           "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
           "NOT /estimate/*/*/", "/estimate/*/",
@@ -120,6 +142,24 @@
           {
             "/": "/order/*/*",
             "comment": "Заказ с хешем или без"
+          },
+          {
+            "/": "/promos/*/section/*/*/",
+            "exclude": true,
+            "comment": "Исключаем остальные ссылки на акцию с категории"
+          },
+          {
+            "/": "/promos/*/section/*/",
+            "comment": "Акция с категорией"
+          },
+          {
+            "/": "/promos/*/*/",
+            "exclude": true,
+            "comment": "Исключаем ссылки на акцию без категории"
+          },
+          {
+            "/": "/promos/*/",
+            "comment": "Акция без категории"
           },
           {
             "/": "/promos/",
