@@ -1,20 +1,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <title>Hello World!</title>
         <script>
-            function href() {
-                window.location.href="https://petrovich.ru?orderId=56251ae7-988b-4669-aee1-bc2e56aa760a&lang=ru";
+            function card() {
+                window.location.href="https://petrovich.ru?orderId=transaction-id-1234&lang=ru";
             }
-            function replace() {
-                window.location.replace("https://petrovich.ru/?orderId=56251ae7-988b-4669-aee1-bc2e56aa760a&lang=ru");
+            function sberpay() {
+                window.location.replace("sberpay://transaction-id-1234");
             }
           </script>
     </head>
     <body>
-        <p>Hello World!</p>
-        <a href="https://petrovich.ru/?orderId=56251ae7-988b-4669-aee1-bc2e56aa760a&lang=ru">Link</a>
-        <input type="button" value="href" onclick="href()">
-        <input type="button" value="replace" onclick="replace()">
+        <p>SberPay test</p>
+        <input type="button" value="Оплата по карте" onclick="card()">
+        <input type="button" value="SberPay" onclick="sberpay()">
     </body>
 </html>
