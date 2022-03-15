@@ -10,11 +10,15 @@
             function sberpay() {
                 window.location.replace("sberpay://transaction-id-1234");
             }
+            function confirmation() {
+                window.location.replace("https://petrovich.ru/pay/result/87643840-4532-4625-a549-514694924ee1/?orderId=3e1483c1-462f-7892-a872-478600002d8e&lang=ru")
+            }
           </script>
     </head>
     <body>
         <p>SberPay test</p>
         <input type="button" value="Оплата по карте" onclick="card()">
         <input type="button" value="SberPay" onclick="sberpay()">
+        <input type="button" value="Подтверждение" onclick="confirmation()">
     </body>
 </html>
