@@ -1,212 +1,107 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "X86NQK83T7.ru.handh.petrovich",
-        "paths": [
-          "/",
-          "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /order/*/*/*/", "/order/*/*",
-          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
-          "NOT /promos/*/*/", "/promos/*/",
-          "/promos/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
-          "NOT /estimate/*/*/", "/estimate/*/",
-          "NOT /qr/order/*/*/", "/qr/order/*/",
-          "/cabinet/profile/"
-        ],
-        "components": [
-          {
-            "/": "*",
-            "?": { "current_city" : "?*", "user_change_city" : "1" },
-            "exclude": true,
-            "comment": "Исключаем любые ссылки со сменой региона"
-          },
-          {
-            "/": "/",
-            "comment": "Главный экран"
-          },
-          {
-            "/": "/catalog/*/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из каталога"
-          },
-          {
-            "/": "/catalog/*/*",
-            "comment": "Категория, товар или избранные товары"
-          },
-          {
-            "/": "/product/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки на товар"
-          },
-          {
-            "/": "/product/*/",
-            "comment": "Товар"
-          },
-          {
-            "/": "/order/*/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из заказов"
-          },
-          {
-            "/": "/order/*/*",
-            "comment": "Заказ с хешем или без"
-          },
-          {
-            "/": "/promos/*/section/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки на акцию с категории"
-          },
-          {
-            "/": "/promos/*/section/*/",
-            "comment": "Акция с категорией"
-          },
-          {
-            "/": "/promos/*/*/",
-            "exclude": true,
-            "comment": "Исключаем ссылки на акцию без категории"
-          },
-          {
-            "/": "/promos/*/",
-            "comment": "Акция без категории"
-          },
-          {
-            "/": "/promos/",
-            "comment": "Список акций"
-          },
-          {
-            "/": "/profile/estimate/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет"
-          },
-          {
-            "/": "/profile/estimate/*/",
-            "comment": "Смета"
-          },
-          {
-            "/": "/estimate/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет второго типа"
-          },
-          {
-            "/": "/estimate/*/",
-            "comment": "Смета второго типа"
-          },
-          {
-            "/": "/qr/order/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет второго типа"
-          },
-          {
-            "/": "/qr/order/*/",
-            "comment": "Заказ из QR-кода"
-          },
-          {
-            "/": "/cabinet/profile/",
-            "comment": "Личный кабинет"
-          }
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "X86NQK83T7.ru.handh.petrovich",
+                    "JL3GM5N4EY.ru.petrovich.ios"
+                ],
+                "components": [
+                    {
+                        "/": "*",
+                        "?": {
+                            "current_city": "?*",
+                            "user_change_city": "1"
+                        },
+                        "exclude": true,
+                        "comment": "Исключаем любые ссылки со сменой региона"
+                    },
+                    {
+                        "/": "/",
+                        "comment": "Главный экран"
+                    },
+                    {
+                        "/": "/catalog/*/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки из каталога"
+                    },
+                    {
+                        "/": "/catalog/*/*",
+                        "comment": "Категория, товар или избранные товары"
+                    },
+                    {
+                        "/": "/product/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки на товар"
+                    },
+                    {
+                        "/": "/product/*/",
+                        "comment": "Товар"
+                    },
+                    {
+                        "/": "/order/*/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки из заказов"
+                    },
+                    {
+                        "/": "/order/*/*",
+                        "comment": "Заказ с хешем или без"
+                    },
+                    {
+                        "/": "/promos/*/section/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки на акцию с категории"
+                    },
+                    {
+                        "/": "/promos/*/section/*/",
+                        "comment": "Акция с категорией"
+                    },
+                    {
+                        "/": "/promos/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем ссылки на акцию без категории"
+                    },
+                    {
+                        "/": "/promos/*/",
+                        "comment": "Акция без категории"
+                    },
+                    {
+                        "/": "/promos/",
+                        "comment": "Список акций"
+                    },
+                    {
+                        "/": "/profile/estimate/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки из смет"
+                    },
+                    {
+                        "/": "/profile/estimate/*/",
+                        "comment": "Смета"
+                    },
+                    {
+                        "/": "/estimate/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки из смет второго типа"
+                    },
+                    {
+                        "/": "/estimate/*/",
+                        "comment": "Смета второго типа"
+                    },
+                    {
+                        "/": "/qr/order/*/*/",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки из смет второго типа"
+                    },
+                    {
+                        "/": "/qr/order/*/",
+                        "comment": "Заказ из QR-кода"
+                    },
+                    {
+                        "/": "/cabinet/profile/",
+                        "comment": "Личный кабинет"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "appID": "JL3GM5N4EY.ru.petrovich.ios",
-        "paths": [
-          "/",
-          "NOT /order/*/*/*/", "/order/*/*",
-          "NOT /catalog/*/*/*/", "/catalog/*/*",
-          "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
-          "NOT /promos/*/*/", "/promos/*/",
-          "/promos/",
-          "NOT /profile/estimate/*/*/", "/profile/estimate/*/",
-          "NOT /estimate/*/*/", "/estimate/*/",
-          "NOT /qr/order/*/*/", "/qr/order/*/",
-          "/cabinet/profile/"
-        ],
-        "components": [
-          {
-            "/": "*",
-            "?": { "current_city" : "?*", "user_change_city" : "1" },
-            "exclude": true,
-            "comment": "Исключаем смену региона"
-          },
-          {
-            "/": "/",
-            "comment": "Главный экран"
-          },
-          {
-            "/": "/catalog/*/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из каталога"
-          },
-          {
-            "/": "/catalog/*/*",
-            "comment": "Категория, товар или избранное"
-          },
-          {
-            "/": "/order/*/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из заказов"
-          },
-          {
-            "/": "/order/*/*",
-            "comment": "Заказ с хешем или без"
-          },
-          {
-            "/": "/promos/*/section/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки на акцию с категории"
-          },
-          {
-            "/": "/promos/*/section/*/",
-            "comment": "Акция с категорией"
-          },
-          {
-            "/": "/promos/*/*/",
-            "exclude": true,
-            "comment": "Исключаем ссылки на акцию без категории"
-          },
-          {
-            "/": "/promos/*/",
-            "comment": "Акция без категории"
-          },
-          {
-            "/": "/promos/",
-            "comment": "Список акций"
-          },
-          {
-            "/": "/profile/estimate/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет"
-          },
-          {
-            "/": "/profile/estimate/*/",
-            "comment": "Смета"
-          },
-          {
-            "/": "/estimate/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет второго типа"
-          },
-          {
-            "/": "/estimate/*/",
-            "comment": "Смета второго типа"
-          },
-          {
-            "/": "/qr/order/*/*/",
-            "exclude": true,
-            "comment": "Исключаем остальные ссылки из смет второго типа"
-          },
-          {
-            "/": "/qr/order/*/",
-            "comment": "Заказ из QR-кода"
-          },
-          {
-            "/": "/cabinet/profile/",
-            "comment": "Личный кабинет"
-          }
-        ]
-      }
-    ]
-  }
+    }
 }
