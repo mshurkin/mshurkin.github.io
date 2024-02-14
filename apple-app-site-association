@@ -6,8 +6,8 @@
         "appID": "X86NQK83T7.ru.handh.petrovich",
         "paths": [
           "/",
-          "NOT /order/*/*/*/", "/order/*/*",
           "NOT /catalog/*/*/*/", "/catalog/*/*",
+          "NOT /order/*/*/*/", "/order/*/*",
           "NOT /promos/*/section/*/*/", "/promos/*/section/*/",
           "NOT /promos/*/*/", "/promos/*/",
           "/promos/",
@@ -21,7 +21,7 @@
             "/": "*",
             "?": { "current_city" : "?*", "user_change_city" : "1" },
             "exclude": true,
-            "comment": "Исключаем смену региона"
+            "comment": "Исключаем любые ссылки со сменой региона"
           },
           {
             "/": "/",
@@ -34,7 +34,11 @@
           },
           {
             "/": "/catalog/*/*",
-            "comment": "Категория, товар или избранное"
+            "comment": "Категория, товар или избранные товары"
+          },
+          {
+            "/": "/product/*/",
+            "comment": "Товар"
           },
           {
             "/": "/order/*/*/*/",
