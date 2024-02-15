@@ -8,6 +8,14 @@
                 ],
                 "components": [
                     {
+                        "/": "test.mshurkin.github.io",
+                        "exclude": true
+                    },
+                    {
+                        "/": "https://promo.mshurkin.github.io",
+                        "exclude": true
+                    },
+                    {
                         "/": "*",
                         "?": {
                             "current_city": "?*",
