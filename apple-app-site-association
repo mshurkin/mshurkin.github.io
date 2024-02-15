@@ -92,26 +92,39 @@
                         "comment": "Заказ из QR-кода"
                     },
                     {
-                        "/": "/profile/estimate/*/*/",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки из смет"
+                        "/": "/cabinet/profile",
+                        "comment": "Личный кабинет"
                     },
                     {
-                        "/": "/profile/estimate/*/",
+                        "/": "/cabinet/estimates",
+                        "comment": "Список смет"
+                    },
+                    {
+                        "/": "/cabinet/estimate/$(digit)*/?*",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
+                    },
+                    {
+                        "/": "/cabinet/estimate/$(digit)*",
                         "comment": "Смета"
                     },
                     {
-                        "/": "/estimate/*/*/",
+                        "/": "/profile/estimate/$(digit)*/?*",
                         "exclude": true,
-                        "comment": "Исключаем остальные ссылки из смет второго типа"
+                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
                     },
                     {
-                        "/": "/estimate/*/",
-                        "comment": "Смета второго типа"
+                        "/": "/profile/estimate/$(digit)*",
+                        "comment": "Смета"
                     },
                     {
-                        "/": "/cabinet/profile/",
-                        "comment": "Личный кабинет"
+                        "/": "/estimate/$(digit)*/?*",
+                        "exclude": true,
+                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
+                    },
+                    {
+                        "/": "/estimate/$(digit)*",
+                        "comment": "Смета"
                     }
                 ]
             }
