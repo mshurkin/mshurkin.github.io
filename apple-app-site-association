@@ -1,7 +1,7 @@
 {
     "applinks": {
         "substitutionVariables": {
-            "section": ["videos", "images/previews"]
+            "section": ["catalog", "product", "products", "promos", "estimate", "cabinet/estimate", "profile/estimate"]
         },
         "details": [
             {
@@ -25,19 +25,12 @@
                     },
                     {
                         "/": "/$(section)/$(digit)*/?*",
-                        "exclude": true
-                    },
-                    {
-                        "/": "/$(section)/$(digit)*"
-                    },
-                    {
-                        "/": "/product/$(digit)*/?*",
                         "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон товара"
+                        "comment": "Исключаем остальные ссылки, подходящие под шаблон"
                     },
                     {
-                        "/": "/product/$(digit)*",
-                        "comment": "Товар"
+                        "/": "/$(section)/$(digit)*",
+                        "comment": "Категория, товар, список товаров, акция без категории, смета"
                     },
                     {
                         "/": "/catalog/$(digit)*/$(digit)*/?*",
@@ -49,26 +42,8 @@
                         "comment": "Товар"
                     },
                     {
-                        "/": "/catalog/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон категории"
-                    },
-                    {
-                        "/": "/catalog/$(digit)*",
-                        "comment": "Категория"
-                    },
-                    {
                         "/": "/catalog/favorite",
                         "comment": "Избранные товары"
-                    },
-                    {
-                        "/": "/products/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон списка товаров"
-                    },
-                    {
-                        "/": "/products/$(digit)*",
-                        "comment": "Список товаров"
                     },
                     {
                         "/": "/promos/$(digit)*/section/$(digit)*/?*",
@@ -78,15 +53,6 @@
                     {
                         "/": "/promos/$(digit)*/section/$(digit)*",
                         "comment": "Акция с категорией"
-                    },
-                    {
-                        "/": "/promos/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон акции без категории"
-                    },
-                    {
-                        "/": "/promos/$(digit)*",
-                        "comment": "Акция без категории"
                     },
                     {
                         "/": "/promos",
@@ -117,33 +83,6 @@
                     {
                         "/": "/cabinet/estimates",
                         "comment": "Список смет"
-                    },
-                    {
-                        "/": "/cabinet/estimate/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
-                    },
-                    {
-                        "/": "/cabinet/estimate/$(digit)*",
-                        "comment": "Смета"
-                    },
-                    {
-                        "/": "/profile/estimate/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
-                    },
-                    {
-                        "/": "/profile/estimate/$(digit)*",
-                        "comment": "Смета"
-                    },
-                    {
-                        "/": "/estimate/$(digit)*/?*",
-                        "exclude": true,
-                        "comment": "Исключаем остальные ссылки, подходящие под шаблон сметы"
-                    },
-                    {
-                        "/": "/estimate/$(digit)*",
-                        "comment": "Смета"
                     }
                 ]
             }
