@@ -91,6 +91,26 @@
                     {
                         "/": "/cabinet/estimates",
                         "comment": "Список смет"
+                    },
+                    {
+                        "/": "/services/equipment-rent",
+                        "comment": "Аренда"
+                    },
+                    {
+                        "/": "/contacts/map-bases",
+                        "comment": "Магазины"
+                    },
+                    {
+                        "/": "/services/delivery",
+                        "comment": "Калькулятор доставки"
+                    },
+                    {
+                        "/": "/services/stocks",
+                        "comment": "Навигация по складам"
+                    },
+                    {
+                        "/": "/services/orders-search",
+                        "comment": "Поиск и оплата заказа"
                     }
                 ]
             }
